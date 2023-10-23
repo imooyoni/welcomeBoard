@@ -52,7 +52,7 @@
 
 									<!-- Options btn color: .btn-success | .btn-info | .btn-warning | .btn-danger | .btn-primary -->
 									<div class="title__action">
-										<a href="javascript:alert('공사중');" class="btn btn-success">Go For write Comment!</a>
+										<a href="javascript:commentList();" class="btn btn-success">Go For write Comment!</a>
 									</div>
 								</div> <!-- .title-01 -->
 							</div>
@@ -64,7 +64,7 @@
 	</body>
 	<script>
 		function commentList() {
-			window.location.href = "/comment/list";
+			window.location.href = "/gallery/list";
 		}
 	</script>
 </html>

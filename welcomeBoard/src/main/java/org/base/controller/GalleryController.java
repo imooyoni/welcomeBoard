@@ -9,15 +9,20 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import lombok.AllArgsConstructor;
 
 @Controller
-@RequestMapping("/comment/*")
+@RequestMapping("/gallery/*")
 @AllArgsConstructor
-public class CommentController {
+public class GalleryController {
 
 	private static final String TAG = Logger.DEBUG_LOG;
 
 	@GetMapping("/list")
 	public void list(Model model) {
 		Logger.debug(model, "list");
+	}
+
+	@GetMapping("/single")
+	public void single(Model model) {
+		Logger.debug(model, "single");
 	}
 
 }

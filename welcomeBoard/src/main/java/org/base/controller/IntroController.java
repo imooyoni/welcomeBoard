@@ -9,15 +9,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import lombok.AllArgsConstructor;
 
 @Controller
-@RequestMapping("/comment/*")
+@RequestMapping("/intro/*")
 @AllArgsConstructor
-public class CommentController {
+public class IntroController {
 
 	private static final String TAG = Logger.DEBUG_LOG;
 
-	@GetMapping("/list")
-	public void list(Model model) {
-		Logger.debug(model, "list");
+	@GetMapping("/intro")
+	public void intro(Model model) {
+		Logger.debug(model, "intro");
 	}
 
 }

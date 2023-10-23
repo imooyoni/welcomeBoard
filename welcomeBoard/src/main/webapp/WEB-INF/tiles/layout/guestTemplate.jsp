@@ -12,8 +12,8 @@
 		<meta content="" name="keywords">
 		
 		<!-- Favicons -->
-		<link href="resources/guest/img/favicon.png" rel="icon">
-		<link href="resources/guest/img/apple-touch-icon.png" rel="apple-touch-icon">
+		<link href="/resources/guest/img/favicon.png" rel="icon">
+		<link href="/resources/guest/img/apple-touch-icon.png" rel="apple-touch-icon">
 		
 		<!-- Google Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,24 +21,24 @@
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 		
 		<!-- Vendor CSS Files -->
-		<link href="resources/guest/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-		<link href="resources/guest/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-		<link href="resources/guest/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-		<link href="resources/guest/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-		<link href="resources/guest/vendor/aos/aos.css" rel="stylesheet">
+		<link href="/resources/guest/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="/resources/guest/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+		<link href="/resources/guest/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+		<link href="/resources/guest/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+		<link href="/resources/guest/vendor/aos/aos.css" rel="stylesheet">
 		
 		<!-- Template Main CSS File -->
-		<link href="resources/guest/css/main.css" rel="stylesheet">
+		<link href="/resources/guest/css/main.css" rel="stylesheet">
 		
 		<!-- Vendor JS Files -->
-		<script src="resources/guest/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-		<script src="resources/guest/vendor/swiper/swiper-bundle.min.js"></script>
-		<script src="resources/guest/vendor/glightbox/js/glightbox.min.js"></script>
-		<script src="resources/guest/vendor/aos/aos.js"></script>
-		<script src="resources/guest/vendor/php-email-form/validate.js"></script>
+		<script src="/resources/guest/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="/resources/guest/vendor/swiper/swiper-bundle.min.js"></script>
+		<script src="/resources/guest/vendor/glightbox/js/glightbox.min.js"></script>
+		<script src="/resources/guest/vendor/aos/aos.js"></script>
+		<script src="/resources/guest/vendor/php-email-form/validate.js"></script>
 		
 		<!-- Template Main JS File -->
-		<script src="resources/guest/js/main.js"></script>
+		<script src="/resources/guest/js/main.js"></script>
 
   <!-- =======================================================
   * Template Name: PhotoFolio

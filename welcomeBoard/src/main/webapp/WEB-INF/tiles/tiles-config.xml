@@ -12,11 +12,17 @@
 		<put-attribute name="footer" value="/WEB-INF/tiles/layout/guestFooter.jsp" />
 	</definition>
  
-	<definition name="guest/*/*" extends="baseLayout">
-		<put-attribute name="body" value="/WEB-INF/views/{1}/{2}/{3}.jsp" />
+	<definition name="comment/*" extends="baseLayout">
+		<put-attribute name="body" value="/WEB-INF/views/comment/{1}.jsp" />
 	</definition>
 	
+	<definition name="gallery/*" extends="baseLayout">
+		<put-attribute name="body" value="/WEB-INF/views/gallery/{1}.jsp" />
+	</definition>
 	
+	<definition name="intro/*" extends="baseLayout">
+		<put-attribute name="body" value="/WEB-INF/views/intro/intro.jsp" />
+	</definition>
 		
 	<!-- landing(home.jsp) -->
 	<definition name="homeLayout" template="/WEB-INF/tiles/layout/homeLayout.jsp">
