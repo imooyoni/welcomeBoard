@@ -1,15 +1,14 @@
 package org.base.service;
 
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import javax.annotation.Resource;
 
+import org.base.domain.CommentVO;
 import org.base.mapper.CommentMapper;
 import org.springframework.stereotype.Service;
-import org.springframework.ui.ModelMap;
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.bind.annotation.ModelAttribute;
 
 @Service(value = "commentService")
 public class CommentService {
@@ -17,12 +16,13 @@ public class CommentService {
 	@Resource(name = "commentMapper")
 	private CommentMapper commentMapper;
 
-	public List<HashMap<String, Object>> getLists(Map<String, Object> paramMap, ModelMap model) {
+	public List<CommentVO> getLists() {
+		return commentMapper.getLists();
+	}
 
-		List<HashMap<String, Object>> list = new ArrayList<HashMap<String, Object>>();
-		list = commentMapper.getLists();
-
-		return list;
+	@Transactional
+	public void write(@ModelAttribute CommentVO params) {
+		commentMapper.write(params);
 	}
 
 }

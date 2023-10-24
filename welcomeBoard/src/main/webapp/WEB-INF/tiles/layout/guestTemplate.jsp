@@ -39,6 +39,7 @@
 		
 		<!-- Template Main JS File -->
 		<script src="/resources/guest/js/main.js"></script>
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
   <!-- =======================================================
   * Template Name: PhotoFolio

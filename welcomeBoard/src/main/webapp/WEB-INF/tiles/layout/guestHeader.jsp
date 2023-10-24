@@ -28,7 +28,7 @@
 				<li class="dropdown"><a href="#"><span>Comment</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
 					<ul>
 						<li><a href="/comment/list">make it!</a></li>
-						<li><a href="#">list</a></li>
+						<li><a href="/comment/lists">list</a></li>
 					</ul>
 				</li>
 			</ul>

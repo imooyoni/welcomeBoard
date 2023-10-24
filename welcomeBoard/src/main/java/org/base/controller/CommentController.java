@@ -1,15 +1,14 @@
 package org.base.controller;
 
-import java.util.Map;
-
 import javax.annotation.Resource;
 
+import org.base.domain.CommentVO;
 import org.base.service.CommentService;
 import org.base.util.Logger;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -31,18 +30,20 @@ public class CommentController {
 	}
 
 	@GetMapping("/lists")
-	public String lists(Map<String, Object> paramMap, ModelMap model) {
+	public void lists(Model model) {
 
 		Logger.debug(model, "lists");
-		commentService.getLists(paramMap, model);
+		model.addAttribute("list", commentService.getLists());
 
-		return "jsonView";
+		System.out.println("list" + model);
 	}
 
 	@PostMapping("/write")
-	public void write(Model model) {
+	public String write(@ModelAttribute CommentVO params, Model model) {
 		Logger.debug(model, "write");
-
+		System.out.println("params :" + params);
+		commentService.write(params);
+		return "redirect:/comment/list";
 	}
 
 }

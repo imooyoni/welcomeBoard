@@ -4,7 +4,9 @@
 
 	<Appenders>
 		<Console name="console" target="SYSTEM_OUT">
-		    <PatternLayout pattern="${layoutPattern}" />
+			<PatternLayout>
+				<Pattern>%d{yyyy-MM-dd HH24:mm:ss:SSS} %m %n</Pattern>
+			</PatternLayout>
 		</Console>
 		<RollingRandomAccessFile
 			name="rolling_log"
@@ -13,7 +15,9 @@
 			immediateFlush="false"
 			append="true"
 			ignoreExceptions="false">
-			<PatternLayout pattern="${layoutPattern}" />
+			<PatternLayout>
+				<Pattern>%d{yyyy-MM-dd HH24:mm:ss:SSS} %m %n</Pattern>
+			</PatternLayout>
 			<Policies>
 				<!-- 30MB 용량이 초과시 DefaultRolloverStrategy 정책만큼 넘버링 -->
 				<SizeBasedTriggeringPolicy size="30 MB" />
@@ -35,7 +39,7 @@
 		</Root>
 
 		<Logger name="debug_log" level="DEBUG">
-			<AppenderRef ref="debug_log_cfg" />
+			<AppenderRef ref="rolling_log" />
 		</Logger>
 
 <!-- 		<Logger name="org.springframework.web.servlet.DispatcherServlet" level="debug" additivity="false"> -->
@@ -46,13 +50,13 @@
 		<!-- jdbc Loggers -->
 <!-- 		<logger name="jdbc" level="ERROR"/> -->
 		<Logger name="jdbc.sqltiming" level="DEBUG">
-			<AppenderRef ref="debug_log_cfg" />
+			<AppenderRef ref="rolling_log" />
 		</Logger>
 		<Logger name="jdbc.resultset" level="ERROR">
-			<AppenderRef ref="debug_log_cfg" />
+			<AppenderRef ref="rolling_log" />
 		</Logger>
 		<Logger name="jdbc.resultsettable" level="ERROR">
-			<AppenderRef ref="debug_log_cfg" />
+			<AppenderRef ref="rolling_log" />
 		</Logger>
 
 	</Loggers>

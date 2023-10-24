@@ -20,6 +20,10 @@
 		<put-attribute name="body" value="/WEB-INF/views/gallery/{1}.jsp" />
 	</definition>
 	
+	<definition name="gallery/*/*" extends="baseLayout">
+		<put-attribute name="body" value="/WEB-INF/views/gallery/{2}/{1}.jsp" />
+	</definition>
+	
 	<definition name="intro/*" extends="baseLayout">
 		<put-attribute name="body" value="/WEB-INF/views/intro/intro.jsp" />
 	</definition>
@@ -31,6 +35,10 @@
 	
 	<definition name="*.jsp" extends="homeLayout">
 		<put-attribute name="main" value="/WEB-INF/views/{1}.jsp" />
+	</definition>
+	
+	<definition name="error/*" extends="homeLayout">
+		<put-attribute name="main" value="/WEB-INF/views/error/{1}.jsp" />
 	</definition>
 	
 </tiles-definitions>

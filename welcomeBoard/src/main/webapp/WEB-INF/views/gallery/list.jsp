@@ -1,6 +1,18 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
   <main id="main" data-aos="fade" data-aos-delay="1500">
+  	<div class="page-header d-flex align-items-center">
+		<div class="container position-relative">
+			<div class="row d-flex justify-content-center">
+				<div class="col-lg-6 text-center">
+					<h2>Photos</h2>
+					<p>
+						우리의 추억!
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!-- ======= Gallery Section ======= -->
 	<section id="gallery" class="gallery">

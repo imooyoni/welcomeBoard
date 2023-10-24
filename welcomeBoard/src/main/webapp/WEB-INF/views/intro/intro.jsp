@@ -48,8 +48,6 @@
 									<i class="bi bi-chevron-right"></i> 
 									<strong>Age:</strong><span>30</span>
 								</li>
-								<!-- <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong>
-									<span>Master</span></li> -->
 								<li>
 									<i class="bi bi-chevron-right"></i> 
 									<strong>PhEmailone:</strong><span>wooyeon0717@gmail.com</span>
@@ -61,12 +59,6 @@
 							</ul>
 						</div>
 					</div>
-					<!-- <p class="m-0">Recusandae est praesentium consequatur eos
-						voluptatem. Vitae dolores aliquam itaque odio nihil. Neque ut
-						neque ut quae voluptas. Maxime corporis aut ut ipsum consequatur.
-						Repudiandae sunt sequi minus qui et. Doloribus molestiae officiis.
-						Soluta eligendi fugiat omnis enim. Numquam alias sint possimus
-						eveniet ad. Ratione in earum eum magni totam.</p> -->
 				</div>
 			</div>
 
@@ -75,7 +67,7 @@
 	<!-- End About Section -->
 
 	<!-- ======= Testimonials Section ======= -->
-	<section id="testimonials" class="testimonials">
+	<!-- <section id="testimonials" class="testimonials">
 		<div class="container">
 
 			<div class="section-header">
@@ -105,7 +97,7 @@
 							</div>
 						</div>
 					</div>
-					<!-- End testimonial item -->
+					End testimonial item
 
 					<div class="swiper-slide">
 						<div class="testimonial-item">
@@ -125,7 +117,7 @@
 							</div>
 						</div>
 					</div>
-					<!-- End testimonial item -->
+					End testimonial item
 
 					<div class="swiper-slide">
 						<div class="testimonial-item">
@@ -145,7 +137,7 @@
 							</div>
 						</div>
 					</div>
-					<!-- End testimonial item -->
+					End testimonial item
 
 					<div class="swiper-slide">
 						<div class="testimonial-item">
@@ -166,7 +158,7 @@
 							</div>
 						</div>
 					</div>
-					<!-- End testimonial item -->
+					End testimonial item
 
 					<div class="swiper-slide">
 						<div class="testimonial-item">
@@ -187,14 +179,14 @@
 							</div>
 						</div>
 					</div>
-					<!-- End testimonial item -->
+					End testimonial item
 
 				</div>
 				<div class="swiper-pagination"></div>
 			</div>
 
 		</div>
-	</section>
+	</section> -->
 	<!-- End Testimonials Section -->
 
 </main>

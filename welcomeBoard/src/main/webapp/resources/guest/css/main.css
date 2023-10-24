@@ -771,6 +771,39 @@ h6 {
   margin: 0;
 }
 
+.gallery .portfolio-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  font-family: var(--font-secondary);
+}
+
+.gallery .portfolio-info h3:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--color-primary);
+  left: 0;
+  bottom: 0;
+}
+
+.gallery .portfolio-info span {
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #6b7075;
+  font-size: 14px;
+}
+
+.gallery .portfolio-info strong {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 15px;
+}
+
 /*--------------------------------------------------------------
 # Gallery Single Section
 --------------------------------------------------------------*/
@@ -1147,7 +1180,7 @@ h6 {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button {
   background: var(--color-primary);
   border: 0;
   padding: 10px 35px;

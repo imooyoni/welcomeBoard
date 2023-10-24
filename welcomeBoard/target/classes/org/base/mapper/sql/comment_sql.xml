@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.base.mapper.CommentMapper">
+
+	<select id="getLists" resultType="commentVO">
+		SELECT
+			commentId,
+			nickName,
+			commentContent,
+			regUserId,
+			regDate
+		FROM
+			TBL_COMMENT
+	</select>
+	
+	<insert id="write" parameterType="commentVO">
+		INSERT INTO TBL_COMMENT(
+			commentId,
+			nickName,
+			commentContent,
+			regUserId,
+			regDate
+		) VALUES (
+			seq_comment.nextval,
+			#{nickName},
+			#{commentContent},
+			9999999999,
+			TO_DATE(SYSDATE,'yyyy-mm-dd')
+		)
+	</insert>
+
+</mapper>
